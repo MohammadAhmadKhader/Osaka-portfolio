@@ -1,0 +1,107 @@
+:root{
+    --mainColor:#ff206e;
+}
+.header{
+    background-image: url('../img/bg_osaka.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header .container a{
+    color:var(--mainColor);
+}
+a:not([href]):not([class]), a:not([href]):not([class]):hover{
+    color: var(--mainColor);
+    cursor: pointer;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover{
+    color: var(--mainColor);
+}
+.w-40{width:40%;}
+.w-45{width:45%;}
+.icon{
+    width:3rem;
+    height:3rem;
+}
+.icon:hover{
+    cursor: pointer;
+    background-color: var(--mainColor);
+}
+.title h2{
+    font-size: 4rem;
+    letter-spacing: 15px;
+    color: #cacaca;
+    font-weight: 900;
+
+}
+.title h3{
+    font-size:2rem;
+    font-weight: 900;
+}
+.about{
+    background-image: url('../../img/light_dot.jpg');
+}
+
+.about .about-text p:first-of-type{
+    color:var(--mainColor);
+}
+.Services{
+    background-image: url('../../img/dark_dot.jpg');
+}
+.Services .title h2{
+    color: #222;
+}
+.Services .title h3{
+    color:white;
+}
+.icon{
+    height:3rem;
+    width:3rem;
+    cursor: pointer;
+}
+.Services-item h2{
+    margin-bottom: 20px;
+}
+.Services-item h2:after{
+    content:'';
+    width:15%;
+    height:3px;
+    background-color: var(--mainColor);
+    position:absolute;
+    top: 50px;
+    left:50%;
+    transform: translatex(-50%);
+    transition: width 0.7s;
+}
+.Services-item:hover h2:after{
+    width: 25%;
+}
+.Services-item .icon:hover i{
+    color:var(--mainColor);
+    transition: color 1s;
+} 
+/* Beginning of Our clients */
+
+
+.client-img{
+    height: 110px !important;
+    width:110px !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators [data-bs-target] {
+    height: 2rem;
+    width:2rem;
+    text-indent: 0px;
+    border-radius: 50%;
+    
+}
+.nav-tabs .nav-link.active{
+    color:var(--mainColor);
+    border: none;
+}
+
+/* End of Our clients */
